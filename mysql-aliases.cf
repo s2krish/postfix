@@ -1,0 +1,4 @@
+hosts = 127.0.0.1
+user = root
+dbname = krishnasunuwar
+query = SELECT CONCAT('|"export PYTHONPATH=/path/to/djangoproject && /path/to/djangoproject/venv/bin/python /path/to/djangoproject/manage.py emailtoinbox --username ', username ,'"') FROM inbox JOIN auth_user ON (auth_user.id = user_id) WHERE inbox_email = '%u'

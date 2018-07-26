@@ -1,0 +1,13 @@
+myhostname = krishnasunuwar.com
+mydomain = krishnasunuwar.com
+mynetworks_style = host
+alias_maps = hash:/etc/aliases, mysql:/etc/postfix/mysql-aliases.cf
+append_dot_mydomain = no
+biff = no
+mydestination = localhost, inbox.krishnasunuwar.com, domain2.com
+
+# DKIM
+#milter_default_action = accept
+#milter_protocol = 2
+#smtpd_milters = inet:localhost:8891
+#non_smtpd_milters = inet:localhost:8891
